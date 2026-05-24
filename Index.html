@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darsh Shah's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">DARSH SHAH</div>
+    <ul class="nav-links">
+      <li><a href="#work" class="nav-link">Projects</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span>Available for contact</span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-line"></span>
+      <span>Hardware Developer</span>
+    </div>
+    <h1 class="hero-title">
+      <span class="hero-word" data-delay="0">Crafting</span>
+      <span class="hero-word italic" data-delay="100">hardware</span>
+      <span class="hero-word" data-delay="200">prototypes</span>
+      <span class="hero-word" data-delay="300">that</span>
+      <span class="hero-word italic accent" data-delay="400">work.</span>
+    </h1>
+    <div class="hero-sub">
+      <p>I'm Darsh Shah, a hardware developer based in Sydney. I turn simple ideas into working prototypes.</p>
+      <a href="#work" class="cta-btn">
+        <span>View Projects</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+      </a>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll Down</span>
+    </div>
+    <div class="hero-bg-text">PORTFOLIO</div>
+  </section>
+
+  <!-- Work / Projects -->
+  <section class="work" id="work">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project project--large reveal">
+        <div class="project-img">
+          <div class="project-img-inner" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">
+            <div class="project-mockup mockup-dashboard">
+              <div class="mockup-bar"></div>
+              <div class="mockup-sidebar"></div>
+              <div class="mockup-content">
+                <div class="mockup-line w80"></div>
+                <div class="mockup-line w60"></div>
+                <div class="mockup-cards">
+                  <div class="mockup-card"></div>
+                  <div class="mockup-card"></div>
+                  <div class="mockup-card"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-hover-overlay">
+            <a href="https://github.com/Anycircle11139s/12-key-hackpad" class="project-link">View Github Repo</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">Hardware Project</span>
+            <span class="tag">Hackpad</span>
+            <span class="tag">2026</span>
+          </div>
+          <h3 class="project-title">16-key hackpad</h3>
+          <p class="project-desc">A slick hackpad featuring 16 programmable keys for efficient workflow and a 128 x 32 pixel Oled for quick-access information.</p>
+          <span class="project-arrow">→</span>
+        </div>
+      </article>
+
+      <article class="project project--small reveal" style="--delay: 100ms">
+        <div class="project-img">
+          <div class="project-img-inner" style="background: linear-gradient(135deg, #2d1b69 0%, #11998e 100%);">
+            <div class="project-mockup mockup-mobile">
+              <div class="mockup-phone">
+                <div class="mockup-phone-screen">
+                  <div class="mockup-app-header"></div>
+                  <div class="mockup-app-list">
+                    <div class="mockup-app-item"></div>
+                    <div class="mockup-app-item"></div>
+                    <div class="mockup-app-item"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-hover-overlay">
+            <a href="https://github.com/Anycircle11139s/Hermes" class="project-link">View Github Repo</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">Hardware Project</span>
+            <span class="tag">Hermes</span>
+            <span class="tag">2026</span>
+          </div>
+          <h3 class="project-title">Temperature sensor</h3>
+          <p class="project-desc">A small, credit-card-sized temperature sensor for monitoring environmental conditions.</p>
+          <span class="project-arrow">→</span>
+        </div>
+      </article>
+
+      <article class="project project--small reveal" style="--delay: 200ms">
+        <div class="project-img">
+          <div class="project-img-inner" style="background: linear-gradient(135deg, #3d0c02 0%, #b5451b 60%, #e8a87c 100%);">
+            <div class="project-mockup mockup-web">
+              <div class="mockup-browser">
+                <div class="mockup-browser-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mockup-browser-body">
+                  <div class="mockup-hero-block"></div>
+                  <div class="mockup-text-lines">
+                    <div class="mockup-line w90"></div>
+                    <div class="mockup-line w70"></div>
+                    <div class="mockup-line w50"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-hover-overlay">
+            <a href="https://github.com/Anycircle11139s/split-keyboard" class="project-link">View Github Repo</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">Hardware Project</span>
+            <span class="tag">Split Keyboard</span>
+            <span class="tag">2026</span>
+          </div>
+          <h3 class="project-title">Split Keyboard</h3>
+          <p class="project-desc">A mechanical keyboard with a unique split design for improved ergonomics and typing comfort. Also features a custom enclosure designed and 3d-printed from scratch.</p>
+          <span class="project-arrow">→</span>
+        </div>
+      </article>
+
+      <article class="project project--wide reveal" style="--delay: 150ms">
+        <div class="project-img">
+          <div class="project-img-inner" style="background: linear-gradient(135deg, #0a0a0a 0%, #1c3a1c 50%, #2d6a2d 100%);">
+            <div class="project-mockup mockup-landing">
+              <div class="mockup-hero-text">
+                <div class="mockup-line w70" style="height: 12px; margin-bottom: 8px;"></div>
+                <div class="mockup-line w50" style="height: 8px; margin-bottom: 4px;"></div>
+                <div class="mockup-line w40" style="height: 8px;"></div>
+              </div>
+              <div class="mockup-grid-blocks">
+                <div class="mockup-block b1"></div>
+                <div class="mockup-block b2"></div>
+                <div class="mockup-block b3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-hover-overlay">
+            <a href="https://github.com/Anycircle11139s/TotallyLegitDevboard" class="project-link">View Github Repo</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">Hardware Project</span>
+            <span class="tag">Custom Devboard</span>
+            <span class="tag">2026</span>
+          </div>
+          <h3 class="project-title">Custom Devboard</h3>
+          <p class="project-desc">A custom development board designed for hobbyists and professionals alike, featuring a unique form factor and extensive support. The rp2040 based devboard offers custom, hand-crafted jokes to limit frustration and crashouts while developing hardware.</p>
+          <span class="project-arrow">→</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-lead">I believe the best products aren't made in one go, they all start with a prototype.</p>
+          <p>And that prototype is where the magic happens, products take shape as ideas evolve and improve. The prototype slowly evolves through iterations, the more iterations, the better the product.</p>
+          <p>Finally, once the product is ready, it's been through so many iterations and refinements, that the product physically cannot be improved further.</p>
+          <div class="about-links">
+            <a href="https://stasis.hackclub.com/dashboard/profile/SqGqawO5TM5B0qtNFvbIj8VDzUGGeF6e" class="text-link">Stasis Profile</a>
+            <a href="https://macondo.hackclub.com/profile" class="text-link">Macondo ↗</a>
+            <a href="https://github.com/Anycircle11139s" class="text-link">Github ↗</a>
+          </div>
+        </div>
+        <div class="about-image-wrap reveal" style="--delay: 150ms">
+          <div class="about-image">
+            <div class="about-image-placeholder">
+              <svg viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="85" r="45" fill="var(--accent)" opacity="0.3"/>
+                <ellipse cx="100" cy="190" rx="65" ry="40" fill="var(--accent)" opacity="0.2"/>
+                <circle cx="100" cy="80" r="38" fill="var(--fg)" opacity="0.08"/>
+              </svg>
+              <span>Very interesting Photo</span>
+            </div>
+          </div>
+          <div class="about-badge">
+            <span class="badge-num">1+</span>
+            <span class="badge-label">Years of<br>experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Skills &amp; Toolset</h2>
+    </div>
+
+    <div class="skills-container">
+      <div class="skills-category reveal">
+        <h3 class="skills-cat-title">Design + Tools</h3>
+        <ul class="skills-list">
+          <li class="skill-item"><span class="skill-name">Kicad</span><div class="skill-bar"><div class="skill-fill" style="--pct: 95%"></div></div></li>
+          <li class="skill-item"><span class="skill-name">Fusion 360</span><div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div></li>
+          <li class="skill-item"><span class="skill-name">EasyEDA</span><div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div></li>
+          <li class="skill-item"><span class="skill-name">VS Code</span><div class="skill-bar"><div class="skill-fill" style="--pct: 90%"></div></div></li>
+          <li class="skill-item"><span class="skill-name">Onshape</span><div class="skill-bar"><div class="skill-fill" style="--pct: 75%"></div></div></li>
+        </ul>
+      </div>
+
+      <div class="skills-category reveal" style="--delay: 100ms">
+        <h3 class="skills-cat-title">Code</h3>
+        <ul class="skills-list">
+          <li class="skill-item"><span class="skill-name">HTML / CSS</span><div class="skill-bar"><div class="skill-fill" style="--pct: 95%"></div></div></li>
+          <li class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--pct: 88%"></div></div></li>
+          <li class="skill-item"><span class="skill-name">React</span><div class="skill-bar"><div class="skill-fill" style="--pct: 82%"></div></div></li>
+          <li class="skill-item"><span class="skill-name">Vue.js</span><div class="skill-bar"><div class="skill-fill" style="--pct: 78%"></div></div></li>
+          <li class="skill-item"><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-fill" style="--pct: 65%"></div></div></li>
+        </ul>
+      </div>
+
+      <div class="skills-category reveal" style="--delay: 200ms">
+        <h3 class="skills-cat-title">Production</h3>
+        <ul class="skills-list">
+          <li class="skill-item"><span class="skill-name">Soldering</span><div class="skill-bar"><div class="skill-fill" style="--pct: 90%"></div></div></li>
+          <li class="skill-item"><span class="skill-name">CAD/3d printing</span><div class="skill-bar"><div class="skill-fill" style="--pct: 92%"></div></div></li>
+          <li class="skill-item"><span class="skill-name">Welding</span><div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div></li>
+          <li class="skill-item"><span class="skill-name">Breadboarding</span><div class="skill-bar"><div class="skill-fill" style="--pct: 88%"></div></div></li>
+          <li class="skill-item"><span class="skill-name">Flashing firmware</span><div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Let's Talk</h2>
+      </div>
+      <div class="contact-content reveal">
+        <p class="contact-lead">Got a project in mind? I'd love to hear about it.</p>
+        <a href="mailto:darsh.shah4@education.nsw.gov.au" class="contact-email">
+          darsh.shah4@education.nsw.gov.au
+          <span class="email-arrow">↗</span>
+        </a>
+        <div class="contact-socials">
+          <a href="#" class="social-link">No Youtube :D</a>
+          <a href="#" class="social-link">No X :D 2</a>
+          <a href="https://github.com/Anycircle11139s" class="social-link">GitHub</a>
+          <a href="#" class="social-link">No Problem :D</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="more-projects">
+    <a href="https://anycircle11139s.github.io/67/" class="btn">Check out my cool 67 website :D</a>
+  </section> 
+
+  <section class="shoutout">
+    <p>Shoutout to Hack club for sponsoring my hardware endevuears <a href="https://hackclub.com/" target="_blank">Hack Club</a>!</p>
+  </section>
+
+  <section class="credits">
+    <p>Site designed and built by me, Darsh Shah. Built with HTML, CSS, and JavaScript.</p>
+  </section>
+  <section class="Slider bar">
+    <input type="range" min="0" max="100" step="10">
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span>© 2026 Darsh Shah</span>
+    <span>Designed &amp; Built with care ♥</span>
+    <a href="#hero" class="back-to-top">Back to top ↑</a>
+  </footer>
+
+  <script>
+    // ── Custom Cursor ──────────────────────────────────────
+    const cursor = document.getElementById('cursor');
+    const follower = document.getElementById('cursor-follower');
+    let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
+
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX; mouseY = e.clientY;
+      cursor.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+    });
+
+    function animateFollower() {
+      followerX += (mouseX - followerX) * 0.12;
+      followerY += (mouseY - followerY) * 0.12;
+      follower.style.transform = `translate(${followerX}px, ${followerY}px)`;
+      requestAnimationFrame(animateFollower);
+    }
+    animateFollower();
+
+    document.querySelectorAll('a, button, .project').forEach(el => {
+      el.addEventListener('mouseenter', () => { cursor.classList.add('hover'); follower.classList.add('hover'); });
+      el.addEventListener('mouseleave', () => { cursor.classList.remove('hover'); follower.classList.remove('hover'); });
+    });
+
+    // ── Scroll Reveal ──────────────────────────────────────
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const delay = el.style.getPropertyValue('--delay') || '0ms';
+          setTimeout(() => el.classList.add('visible'), parseInt(delay));
+          revealObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(el => revealObserver.observe(el));
+
+    // ── Skill Bars ─────────────────────────────────────────
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.skill-fill').forEach(bar => {
+            bar.style.width = bar.style.getPropertyValue('--pct') || '0%';
+          });
+          skillObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.skills-category').forEach(el => skillObserver.observe(el));
+
+    // ── Sticky Nav ─────────────────────────────────────────
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ── Smooth Scroll ──────────────────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // ── Hero word stagger on load ──────────────────────────
+    window.addEventListener('load', () => {
+      document.querySelectorAll('.hero-word').forEach(w => {
+        const d = parseInt(w.dataset.delay || 0);
+        setTimeout(() => w.classList.add('visible'), d + 200);
+      });
+    });
+  </script>
+</body>
+</html>
